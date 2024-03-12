@@ -19,7 +19,7 @@
 
             <br />
 
-            <asp:Button ID="Button1" runat="server" Text="Log In" PostBackUrl="~/CrossPage2.aspx" />
+            <asp:Button ID="Button1" runat="server" Text="Log In" PostBackUrl="~/CrossPage2.aspx"/>
 
         </div>
 

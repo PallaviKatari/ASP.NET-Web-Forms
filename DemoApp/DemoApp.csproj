@@ -124,6 +124,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="CrossPage2.aspx" />
     <Content Include="CrossPagePostback.aspx" />
+    <Content Include="Dataset.aspx" />
+    <Content Include="DataView.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="DemoWithMaster.aspx" />
     <Content Include="DemoWithoutMaster.aspx" />
@@ -189,6 +191,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="StoredProcedure.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -231,6 +234,20 @@
     </Compile>
     <Compile Include="CrossPagePostback.aspx.designer.cs">
       <DependentUpon>CrossPagePostback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset.aspx.cs">
+      <DependentUpon>Dataset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dataset.aspx.designer.cs">
+      <DependentUpon>Dataset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataView.aspx.cs">
+      <DependentUpon>DataView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataView.aspx.designer.cs">
+      <DependentUpon>DataView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -298,6 +315,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedure.aspx.cs">
+      <DependentUpon>StoredProcedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StoredProcedure.aspx.designer.cs">
+      <DependentUpon>StoredProcedure.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

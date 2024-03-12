@@ -28,7 +28,7 @@ namespace DemoApp
                 // Creating Connection  
                 con = new SqlConnection("Server=CGVAK-LT156\\SQLEXPRESS2019;Database=WebForms;Trusted_Connection=True;TrustServerCertificate=True;");
                 // writing sql query  
-                SqlCommand cm = new SqlCommand("create table Employees(id int not null, name varchar(100), email varchar(50), join_date date)", con);
+                SqlCommand cm = new SqlCommand("create table WebFormTraining(id int not null, name varchar(100))", con);
                 // Opening Connection  
                 con.Open();
                 // Executing the SQL query  
@@ -51,10 +51,10 @@ namespace DemoApp
             SqlConnection con = null;
             try
             {
-                string name = TextBox4.Text;
-                int id = Convert.ToInt32(TextBox5.Text);
-                string email= TextBox6.Text;
-                string date = TextBox7.Text;
+                string name = TextBox4.Text;//John
+                int id = Convert.ToInt32(TextBox5.Text);//1
+                string email= TextBox6.Text;//john@gmail.com
+                string date = TextBox7.Text;//01-01-01
                 // Creating Connection  
                 con = new SqlConnection("Server=CGVAK-LT156\\SQLEXPRESS2019;Database=WebForms;Trusted_Connection=True;TrustServerCertificate=True;");
                 // writing sql query  
@@ -105,7 +105,7 @@ namespace DemoApp
                 // Opening Connection  
                 con.Open();
                 // Executing the SQL query  
-                SqlDataReader sdr = cm.ExecuteReader();
+                SqlDataReader sdr = cm.ExecuteReader();//Select * from Employees
                 Response.Write("EMPLOYEE DETAILS" + "<br>");
                 Response.Write("------------------------" + "<br>");
                 // Iterating Data  
@@ -113,7 +113,7 @@ namespace DemoApp
                 {                  
                         // Displaying Record  
                         Response.Write(Environment.NewLine);
-                        Response.Write(sdr["id"] + " - " + sdr["name"] + " - " + sdr["email"] + "<br>");
+                        Response.Write(sdr["id"] + " - " + sdr["name"] + " - " + sdr["email"] + " - " + sdr["join_date"] + "<br>");
                 }
             }
             catch (Exception e)
