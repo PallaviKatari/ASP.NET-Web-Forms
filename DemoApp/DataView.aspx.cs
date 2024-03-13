@@ -34,15 +34,15 @@ namespace DemoApp
 
         private void DataViewDemo()
         {
-            SqlConnection con = new SqlConnection(ConString);
-            string strSQL = "Select * from Employees";
-            SqlDataAdapter dt = new SqlDataAdapter(strSQL, con);
-            DataSet ds = new DataSet();
-            dt.Fill(ds, "Employees");
-            con.Close();
-            DataView dv = new DataView();
-            GridView2   .DataSource = ds.Tables[0].DefaultView;
-            GridView2.DataBind();
+            //SqlConnection con = new SqlConnection(ConString);
+            //string strSQL = "Select * from Employees";
+            //SqlDataAdapter dt = new SqlDataAdapter(strSQL, con);
+            //DataSet ds = new DataSet();
+            //dt.Fill(ds, "Employees");
+            //con.Close();
+            //DataView dv = new DataView();
+            //GridView2.DataSource = ds.Tables[0].DefaultView;
+            //GridView2.DataBind();
 
         }
        

@@ -1,0 +1,11 @@
+<DepartmentData>
+  <Department Id="101" name="IT">
+    <Location location="Mumbai">Mumbai</Location>
+  </Department>
+  <Department Id="102" name="HR">
+    <Location location="Delhi"></Location>
+  </Department>
+  <Department Id="103" name="Sales">
+    <Location location="Pune"></Location>
+  </Department>
+</DepartmentData>

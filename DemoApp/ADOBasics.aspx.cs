@@ -53,7 +53,7 @@ namespace DemoApp
             {
                 string name = TextBox4.Text;//John
                 int id = Convert.ToInt32(TextBox5.Text);//1
-                string email= TextBox6.Text;//john@gmail.com
+                string email = TextBox6.Text;//john@gmail.com
                 string date = TextBox7.Text;//01-01-01
                 // Creating Connection  
                 con = new SqlConnection("Server=CGVAK-LT156\\SQLEXPRESS2019;Database=WebForms;Trusted_Connection=True;TrustServerCertificate=True;");
@@ -110,10 +110,10 @@ namespace DemoApp
                 Response.Write("------------------------" + "<br>");
                 // Iterating Data  
                 while (sdr.Read())
-                {                  
-                        // Displaying Record  
-                        Response.Write(Environment.NewLine);
-                        Response.Write(sdr["id"] + " - " + sdr["name"] + " - " + sdr["email"] + " - " + sdr["join_date"] + "<br>");
+                {
+                    // Displaying Record  
+                    Response.Write(Environment.NewLine);
+                    Response.Write(sdr["id"] + " - " + sdr["name"] + " - " + sdr["email"] + " - " + sdr["join_date"] + "<br>");
                 }
             }
             catch (Exception e)
@@ -137,8 +137,8 @@ namespace DemoApp
             SqlConnection con = null;
             try
             {
-                string id=TextBox2.Text;
-                string name =TextBox1.Text;
+                string id = TextBox2.Text;
+                string name = TextBox1.Text;
                 // Creating Connection  
                 con = new SqlConnection(ConString);
                 // writing sql query  
