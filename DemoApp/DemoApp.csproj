@@ -44,12 +44,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -104,6 +113,8 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="ADOBasics.aspx" />
+    <Content Include="CascadingDropdownList.aspx" />
+    <Content Include="Charts.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -131,12 +142,16 @@
     <Content Include="Default.aspx" />
     <Content Include="DemoWithMaster.aspx" />
     <Content Include="DemoWithoutMaster.aspx" />
+    <Content Include="EntityFrameworkDemo.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Files\EmployeeDepartmentDetails.xml" />
     <Content Include="Global.asax" />
     <Content Include="IsPostback.aspx" />
+    <Content Include="LocalDB.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="MultiView.aspx" />
     <Content Include="PageLifeCycle.aspx" />
+    <Content Include="Panels.aspx" />
     <Content Include="Postback.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -167,6 +182,16 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="SQLBulkInsertUpdate.aspx" />
+    <Content Include="WebForms.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>WebForms.Context.cs</LastGenOutput>
+      <DependentUpon>WebForms.edmx</DependentUpon>
+    </Content>
+    <Content Include="WebForms.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WebForms.edmx</DependentUpon>
+      <LastGenOutput>WebForms.cs</LastGenOutput>
+    </Content>
     <Content Include="XMLDataAccess.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -201,6 +226,13 @@
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
+    <EntityDeploy Include="WebForms.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WebForms.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="WebForms.edmx.diagram">
+      <DependentUpon>WebForms.edmx</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ADOBasics.aspx.cs">
@@ -210,6 +242,7 @@
     <Compile Include="ADOBasics.aspx.designer.cs">
       <DependentUpon>ADOBasics.aspx</DependentUpon>
     </Compile>
+    <Content Include="App_Code\EmployeeDetails.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -219,6 +252,20 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="CascadingDropdownList.aspx.cs">
+      <DependentUpon>CascadingDropdownList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CascadingDropdownList.aspx.designer.cs">
+      <DependentUpon>CascadingDropdownList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts.aspx.cs">
+      <DependentUpon>Charts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Charts.aspx.designer.cs">
+      <DependentUpon>Charts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -289,6 +336,16 @@
     <Compile Include="DemoWithoutMaster.aspx.designer.cs">
       <DependentUpon>DemoWithoutMaster.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>WebForms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFrameworkDemo.aspx.cs">
+      <DependentUpon>EntityFrameworkDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntityFrameworkDemo.aspx.designer.cs">
+      <DependentUpon>EntityFrameworkDemo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -299,6 +356,13 @@
     <Compile Include="IsPostback.aspx.designer.cs">
       <DependentUpon>IsPostback.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LocalDB.aspx.cs">
+      <DependentUpon>LocalDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LocalDB.aspx.designer.cs">
+      <DependentUpon>LocalDB.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -306,12 +370,26 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MultiView.aspx.cs">
+      <DependentUpon>MultiView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MultiView.aspx.designer.cs">
+      <DependentUpon>MultiView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PageLifeCycle.aspx.cs">
       <DependentUpon>PageLifeCycle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="PageLifeCycle.aspx.designer.cs">
       <DependentUpon>PageLifeCycle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels.aspx.cs">
+      <DependentUpon>Panels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels.aspx.designer.cs">
+      <DependentUpon>Panels.aspx</DependentUpon>
     </Compile>
     <Compile Include="Postback.aspx.cs">
       <DependentUpon>Postback.aspx</DependentUpon>
@@ -356,6 +434,21 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebForms.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebForms.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebForms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebForms.edmx</DependentUpon>
+    </Compile>
     <Compile Include="XMLDataAccess.aspx.cs">
       <DependentUpon>XMLDataAccess.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -377,6 +470,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
