@@ -113,8 +113,14 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="ADOBasics.aspx" />
+    <Content Include="AdRotatorAjax.aspx" />
+    <Content Include="AjaxBasicDemo.aspx" />
+    <Content Include="AjaxCall.aspx" />
+    <Content Include="AjaxCRUD.aspx" />
+    <Content Include="AjaxFunction.aspx" />
     <Content Include="CascadingDropdownList.aspx" />
     <Content Include="Charts.aspx" />
+    <Content Include="ClientSideValidation.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -140,19 +146,32 @@
     <Content Include="Dataset.aspx" />
     <Content Include="DataView.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Demo1.ascx" />
     <Content Include="DemoWithMaster.aspx" />
     <Content Include="DemoWithoutMaster.aspx" />
     <Content Include="EntityFrameworkDemo.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="Files\adrotator.xml" />
     <Content Include="Files\EmployeeDepartmentDetails.xml" />
+    <Content Include="Files\Navigation.xml" />
     <Content Include="Global.asax" />
+    <Content Include="Images\IMG1.jpg" />
+    <Content Include="Images\img2.jpg" />
+    <Content Include="Images\img3.jpg" />
+    <Content Include="Images\img4.jpg" />
+    <Content Include="Images\img5.jpg" />
+    <Content Include="Images\img6.jpg" />
     <Content Include="IsPostback.aspx" />
+    <Content Include="jQueryValidation.aspx" />
     <Content Include="LocalDB.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Multilingual.aspx" />
     <Content Include="MultiView.aspx" />
+    <Content Include="Navigation.aspx" />
     <Content Include="PageLifeCycle.aspx" />
     <Content Include="Panels.aspx" />
     <Content Include="Postback.aspx" />
+    <Content Include="Sample.ascx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -181,7 +200,10 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="ServerSideValidation.aspx" />
+    <Content Include="SiteMap.aspx" />
     <Content Include="SQLBulkInsertUpdate.aspx" />
+    <Content Include="Substitution.aspx" />
     <Content Include="WebForms.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>WebForms.Context.cs</LastGenOutput>
@@ -192,7 +214,30 @@
       <DependentUpon>WebForms.edmx</DependentUpon>
       <LastGenOutput>WebForms.cs</LastGenOutput>
     </Content>
+    <Content Include="Wizard.aspx" />
     <Content Include="XMLDataAccess.aspx" />
+    <Content Include="App_Themes\CommonUI\Textbox.skin" />
+    <Content Include="App_Themes\CommonUI\Button.skin" />
+    <EmbeddedResource Include="App_GlobalResources\Lang.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lang.en-US.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\Lang.fr-FR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Lang.fr-FR.designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\Lang.or-IN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Lang.or-IN.designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\Lang.ta-IN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Lang.ta-IN.designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Default.aspx.fr.resx">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -233,6 +278,7 @@
     <Content Include="WebForms.edmx.diagram">
       <DependentUpon>WebForms.edmx</DependentUpon>
     </Content>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ADOBasics.aspx.cs">
@@ -243,6 +289,61 @@
       <DependentUpon>ADOBasics.aspx</DependentUpon>
     </Compile>
     <Content Include="App_Code\EmployeeDetails.cs" />
+    <Compile Include="AdRotatorAjax.aspx.cs">
+      <DependentUpon>AdRotatorAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdRotatorAjax.aspx.designer.cs">
+      <DependentUpon>AdRotatorAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxBasicDemo.aspx.cs">
+      <DependentUpon>AjaxBasicDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxBasicDemo.aspx.designer.cs">
+      <DependentUpon>AjaxBasicDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxCall.aspx.cs">
+      <DependentUpon>AjaxCall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxCall.aspx.designer.cs">
+      <DependentUpon>AjaxCall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxCRUD.aspx.cs">
+      <DependentUpon>AjaxCRUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxCRUD.aspx.designer.cs">
+      <DependentUpon>AjaxCRUD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxFunction.aspx.cs">
+      <DependentUpon>AjaxFunction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxFunction.aspx.designer.cs">
+      <DependentUpon>AjaxFunction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Lang.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lang.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Lang.fr-FR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lang.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Lang.or-IN.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lang.or-IN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Lang.ta-IN.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lang.ta-IN.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -265,6 +366,13 @@
     </Compile>
     <Compile Include="Charts.aspx.designer.cs">
       <DependentUpon>Charts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSideValidation.aspx.cs">
+      <DependentUpon>ClientSideValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSideValidation.aspx.designer.cs">
+      <DependentUpon>ClientSideValidation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -322,6 +430,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Demo1.ascx.cs">
+      <DependentUpon>Demo1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo1.ascx.designer.cs">
+      <DependentUpon>Demo1.ascx</DependentUpon>
+    </Compile>
     <Compile Include="DemoWithMaster.aspx.cs">
       <DependentUpon>DemoWithMaster.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -356,6 +471,13 @@
     <Compile Include="IsPostback.aspx.designer.cs">
       <DependentUpon>IsPostback.aspx</DependentUpon>
     </Compile>
+    <Compile Include="jQueryValidation.aspx.cs">
+      <DependentUpon>jQueryValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jQueryValidation.aspx.designer.cs">
+      <DependentUpon>jQueryValidation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LocalDB.aspx.cs">
       <DependentUpon>LocalDB.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -370,12 +492,26 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Multilingual.aspx.cs">
+      <DependentUpon>Multilingual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Multilingual.aspx.designer.cs">
+      <DependentUpon>Multilingual.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MultiView.aspx.cs">
       <DependentUpon>MultiView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MultiView.aspx.designer.cs">
       <DependentUpon>MultiView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation.aspx.cs">
+      <DependentUpon>Navigation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navigation.aspx.designer.cs">
+      <DependentUpon>Navigation.aspx</DependentUpon>
     </Compile>
     <Compile Include="PageLifeCycle.aspx.cs">
       <DependentUpon>PageLifeCycle.aspx</DependentUpon>
@@ -399,6 +535,20 @@
       <DependentUpon>Postback.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sample.ascx.cs">
+      <DependentUpon>Sample.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample.ascx.designer.cs">
+      <DependentUpon>Sample.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerSideValidation.aspx.cs">
+      <DependentUpon>ServerSideValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServerSideValidation.aspx.designer.cs">
+      <DependentUpon>ServerSideValidation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -413,6 +563,20 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMap.aspx.cs">
+      <DependentUpon>SiteMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMap.aspx.designer.cs">
+      <DependentUpon>SiteMap.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SQLBulkInsertUpdate.aspx.cs">
       <DependentUpon>SQLBulkInsertUpdate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -426,6 +590,13 @@
     </Compile>
     <Compile Include="StoredProcedure.aspx.designer.cs">
       <DependentUpon>StoredProcedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Substitution.aspx.cs">
+      <DependentUpon>Substitution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Substitution.aspx.designer.cs">
+      <DependentUpon>Substitution.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -449,6 +620,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>WebForms.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Wizard.aspx.cs">
+      <DependentUpon>Wizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wizard.aspx.designer.cs">
+      <DependentUpon>Wizard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="XMLDataAccess.aspx.cs">
       <DependentUpon>XMLDataAccess.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -464,6 +642,7 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

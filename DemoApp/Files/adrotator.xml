@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/Images/IMG1.jpg</ImageUrl>
+		<NavigateUrl>https://html.com</NavigateUrl>
+		<AlternateText>HTML</AlternateText>
+		<Impressions>50</Impressions>
+		<Keyword>HTML</Keyword>
+	</Ad>
+
+	<Ad>
+		<ImageUrl>~/Images/img2.jpg</ImageUrl>
+		<NavigateUrl>http://css.com</NavigateUrl>
+		<AlternateText>CSS</AlternateText>
+		<Impressions>100</Impressions>
+		<Keyword>CSS</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Images/img3.jpg</ImageUrl>
+		<NavigateUrl>https://www.com</NavigateUrl>
+		<AlternateText>WWW</AlternateText>
+		<Impressions>50</Impressions>
+		<Keyword>WWW</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Images/img4.jpg</ImageUrl>
+		<NavigateUrl>https://www.com</NavigateUrl>
+		<AlternateText>WWW</AlternateText>
+		<Impressions>50</Impressions>
+		<Keyword>WWW</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Images/img5.jpg</ImageUrl>
+		<NavigateUrl>https://www.com</NavigateUrl>
+		<AlternateText>WWW</AlternateText>
+		<Impressions>50</Impressions>
+		<Keyword>WWW</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Images/img6.jpg</ImageUrl>
+		<NavigateUrl>https://www.com</NavigateUrl>
+		<AlternateText>WWW</AlternateText>
+		<Impressions>50</Impressions>
+		<Keyword>WWW</Keyword>
+	</Ad>
+</Advertisements>

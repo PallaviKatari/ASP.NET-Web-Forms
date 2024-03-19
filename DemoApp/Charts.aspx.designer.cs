@@ -24,6 +24,15 @@ namespace DemoApp
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Demo1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DemoApp.Demo1 Demo1;
+
+        /// <summary>
         /// Chart1 control.
         /// </summary>
         /// <remarks>

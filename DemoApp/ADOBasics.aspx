@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ADOBasics.aspx.cs" Inherits="DemoApp.ADOBasics" %>
+﻿<%@ Page Language="C#" Theme="CommonUI" CodeBehind="ADOBasics.aspx.cs" Inherits="DemoApp.ADOBasics" %>
 
 <!DOCTYPE html>
 

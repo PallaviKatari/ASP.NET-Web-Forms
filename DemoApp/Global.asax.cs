@@ -17,5 +17,10 @@ namespace DemoApp
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        protected void Session_Start(object sender, EventArgs e)
+        {
+            Session["count"] = 0;
+            Session["count"] = Int32.Parse(Session["count"].ToString()) + 1;
+        }
     }
 }

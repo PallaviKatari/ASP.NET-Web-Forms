@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap xmlns="https://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode title="Home" description="Home" url="./Default.aspx">
+
+		<siteMapNode title="ADO" description="ADO" url="./ADOBasics.aspx">
+
+			<siteMapNode title="Charts" description="Charts" url="./Charts.aspx" />
+
+			<siteMapNode title="Dataset" description="Dataset" url="./Dataset.aspx" />
+
+		</siteMapNode>
+
+		<siteMapNode title="DataControls" description="DataControls" url="./DataControls.aspx">
+
+			<siteMapNode title="Login" description = "Login" url="./Login.aspx" />
+
+			<siteMapNode title="Panels" description="Panels" url="./Panels.aspx" />
+
+			<siteMapNode title="Postback" description="Postback" url="./Postback.aspx" />
+
+		</siteMapNode>
+
+	</siteMapNode>
+
+</siteMap>

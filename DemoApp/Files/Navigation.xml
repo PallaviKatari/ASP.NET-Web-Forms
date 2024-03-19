@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<application>
+	<homepage title="Country" value="Default.aspx">
+		<page title ="INDIA" value="Default.aspx">
+			<subpage title ="UP" value="Default.aspx"/>
+			<subpage title ="Delhi" value="Default.aspx"/>
+			<subpage title ="Mumbai" value="Default.aspx"/>
+			<subpage title ="Kolkata" value="Default.aspx"/>
+		</page>
+		<page title ="US" value="Default.aspx"/>
+		<page title ="CHINA" value="Default.aspx"/>
+		<page title ="JAPAN" value="Default.aspx"/>
+	</homepage>
+</application>

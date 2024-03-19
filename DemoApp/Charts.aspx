@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Charts.aspx.cs" Inherits="DemoApp.Charts" %>
 
 <%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
+<%@ Register Src="~/Demo1.ascx" TagPrefix="uc1" TagName="Demo1" %>
+
 
 <!DOCTYPE html>
 
@@ -11,6 +13,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <uc1:Demo1 runat="server" id="Demo1" />
             <asp:Chart ID="Chart1" runat="server" Width="800px">
                 <Series>
                     <%--Represents Column XValueMember="0" YValueMembers="2"--%>
