@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Panels.aspx.cs" Inherits="DemoApp.Panels" %>
+﻿<%@ Page Language="C#" EnableViewState="true" ViewStateEncryptionMode="Always" AutoEventWireup="true" CodeBehind="Panels.aspx.cs" Inherits="DemoApp.Panels" %>
 
 <!DOCTYPE html>
 

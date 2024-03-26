@@ -20,6 +20,7 @@ namespace DemoApp
             string password=TextBox2.Text;
             if(username=="admin" && password=="admin")
             {
+                Session["name"] = TextBox1.Text;
                 Response.Redirect("About.aspx");
             }
             else

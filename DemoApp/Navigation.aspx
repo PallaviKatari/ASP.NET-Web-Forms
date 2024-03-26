@@ -8,8 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            
+        <div>            
             <asp:TreeView ID="TreeView1" runat="server" DataSourceID="XmlDataSource1">
                 <DataBindings>
                     <asp:TreeNodeBinding DataMember="homepage" TextField="title"></asp:TreeNodeBinding>
@@ -26,6 +25,14 @@
                     <asp:MenuItemBinding DataMember="subpage" TextField="title"></asp:MenuItemBinding>
                 </DataBindings>
             </asp:Menu>
+            <hr />
+            <asp:TreeView ID="TreeView2" runat="server" DataSourceID="XmlDataSource1">
+                <DataBindings>
+                    <asp:TreeNodeBinding DataMember="homepage" TextField="title"></asp:TreeNodeBinding>
+                    <asp:TreeNodeBinding DataMember="page" TextField="title"></asp:TreeNodeBinding>
+                    <asp:TreeNodeBinding DataMember="subpage" TextField="title"></asp:TreeNodeBinding>
+                </DataBindings>
+            </asp:TreeView>
         </div>
     </form>
 </body>

@@ -11,6 +11,7 @@ namespace DemoApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Label1.Text = Session["name"].ToString();
             Trace.Warn("Trace Warn Demo");
             Trace.Write("Trace Write Demo");
             //Response.Write("Welcome to Web Forms");

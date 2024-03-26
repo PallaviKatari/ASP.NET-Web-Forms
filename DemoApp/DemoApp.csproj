@@ -112,12 +112,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AddToCart.aspx" />
     <Content Include="ADOBasics.aspx" />
     <Content Include="AdRotatorAjax.aspx" />
     <Content Include="AjaxBasicDemo.aspx" />
     <Content Include="AjaxCall.aspx" />
     <Content Include="AjaxCRUD.aspx" />
     <Content Include="AjaxFunction.aspx" />
+    <Content Include="Caching.aspx" />
     <Content Include="CascadingDropdownList.aspx" />
     <Content Include="Charts.aspx" />
     <Content Include="ClientSideValidation.aspx" />
@@ -139,8 +141,11 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="ClientSideState.aspx" />
+    <Content Include="Cookies.aspx" />
     <Content Include="CrossPage2.aspx" />
     <Content Include="CrossPagePostback.aspx" />
+    <Content Include="Dashboard.aspx" />
     <Content Include="DataControls.aspx" />
     <Content Include="DataControlsDemo.aspx" />
     <Content Include="Dataset.aspx" />
@@ -150,11 +155,14 @@
     <Content Include="DemoWithMaster.aspx" />
     <Content Include="DemoWithoutMaster.aspx" />
     <Content Include="EntityFrameworkDemo.aspx" />
+    <Content Include="ErrorHandlingDemo.aspx" />
+    <Content Include="ErrorPage.html" />
     <Content Include="favicon.ico" />
     <Content Include="Files\adrotator.xml" />
     <Content Include="Files\EmployeeDepartmentDetails.xml" />
     <Content Include="Files\Navigation.xml" />
     <Content Include="Global.asax" />
+    <Content Include="Images\demo.jfif" />
     <Content Include="Images\IMG1.jpg" />
     <Content Include="Images\img2.jpg" />
     <Content Include="Images\img3.jpg" />
@@ -165,12 +173,16 @@
     <Content Include="jQueryValidation.aspx" />
     <Content Include="LocalDB.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="LoginDBSession.aspx" />
     <Content Include="Multilingual.aspx" />
     <Content Include="MultiView.aspx" />
     <Content Include="Navigation.aspx" />
+    <Content Include="ObjectCache.aspx" />
     <Content Include="PageLifeCycle.aspx" />
+    <Content Include="PageNotFound.html" />
     <Content Include="Panels.aspx" />
     <Content Include="Postback.aspx" />
+    <Content Include="Products.aspx" />
     <Content Include="Sample.ascx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -204,6 +216,8 @@
     <Content Include="SiteMap.aspx" />
     <Content Include="SQLBulkInsertUpdate.aspx" />
     <Content Include="Substitution.aspx" />
+    <Content Include="ValidationDemo.aspx" />
+    <Content Include="ViewState.aspx" />
     <Content Include="WebForms.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>WebForms.Context.cs</LastGenOutput>
@@ -214,6 +228,7 @@
       <DependentUpon>WebForms.edmx</DependentUpon>
       <LastGenOutput>WebForms.cs</LastGenOutput>
     </Content>
+    <Content Include="WebServerControlDemo.aspx" />
     <Content Include="Wizard.aspx" />
     <Content Include="XMLDataAccess.aspx" />
     <Content Include="App_Themes\CommonUI\Textbox.skin" />
@@ -281,6 +296,13 @@
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddToCart.aspx.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddToCart.aspx.designer.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ADOBasics.aspx.cs">
       <DependentUpon>ADOBasics.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -353,6 +375,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Caching.aspx.cs">
+      <DependentUpon>Caching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Caching.aspx.designer.cs">
+      <DependentUpon>Caching.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CascadingDropdownList.aspx.cs">
       <DependentUpon>CascadingDropdownList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -381,6 +410,20 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ClientSideState.aspx.cs">
+      <DependentUpon>ClientSideState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSideState.aspx.designer.cs">
+      <DependentUpon>ClientSideState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cookies.aspx.cs">
+      <DependentUpon>Cookies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cookies.aspx.designer.cs">
+      <DependentUpon>Cookies.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CrossPage2.aspx.cs">
       <DependentUpon>CrossPage2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -394,6 +437,13 @@
     </Compile>
     <Compile Include="CrossPagePostback.aspx.designer.cs">
       <DependentUpon>CrossPagePostback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataControls.aspx.cs">
       <DependentUpon>DataControls.aspx</DependentUpon>
@@ -461,6 +511,13 @@
     <Compile Include="EntityFrameworkDemo.aspx.designer.cs">
       <DependentUpon>EntityFrameworkDemo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ErrorHandlingDemo.aspx.cs">
+      <DependentUpon>ErrorHandlingDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorHandlingDemo.aspx.designer.cs">
+      <DependentUpon>ErrorHandlingDemo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -492,6 +549,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LoginDBSession.aspx.cs">
+      <DependentUpon>LoginDBSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginDBSession.aspx.designer.cs">
+      <DependentUpon>LoginDBSession.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Multilingual.aspx.cs">
       <DependentUpon>Multilingual.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -513,6 +577,13 @@
     <Compile Include="Navigation.aspx.designer.cs">
       <DependentUpon>Navigation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ObjectCache.aspx.cs">
+      <DependentUpon>ObjectCache.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ObjectCache.aspx.designer.cs">
+      <DependentUpon>ObjectCache.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PageLifeCycle.aspx.cs">
       <DependentUpon>PageLifeCycle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -533,6 +604,13 @@
     </Compile>
     <Compile Include="Postback.aspx.designer.cs">
       <DependentUpon>Postback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sample.ascx.cs">
@@ -598,6 +676,20 @@
     <Compile Include="Substitution.aspx.designer.cs">
       <DependentUpon>Substitution.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ValidationDemo.aspx.cs">
+      <DependentUpon>ValidationDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidationDemo.aspx.designer.cs">
+      <DependentUpon>ValidationDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewState.aspx.cs">
+      <DependentUpon>ViewState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewState.aspx.designer.cs">
+      <DependentUpon>ViewState.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -619,6 +711,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>WebForms.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="WebServerControlDemo.aspx.cs">
+      <DependentUpon>WebServerControlDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebServerControlDemo.aspx.designer.cs">
+      <DependentUpon>WebServerControlDemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Wizard.aspx.cs">
       <DependentUpon>Wizard.aspx</DependentUpon>
@@ -652,6 +751,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServerControl\ServerControl.csproj">
+      <Project>{5637d72a-ef17-4a1c-a8c9-cc4011d0777f}</Project>
+      <Name>ServerControl</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
