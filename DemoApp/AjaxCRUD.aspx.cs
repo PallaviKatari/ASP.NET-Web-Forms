@@ -39,7 +39,7 @@ namespace DemoApp
         [WebMethod]
         public static void DeleteTask(int id)
         {
-            Task taskToRemove = tasks.Find(t => t.Id == id);
+            Task taskToRemove = tasks.Find(t => t.Id == id);//2
             if (taskToRemove != null)
             {
                 tasks.Remove(taskToRemove);
@@ -49,7 +49,7 @@ namespace DemoApp
         [WebMethod]
         public static void UpdateTask(int id, string name)
         {
-            Task taskToUpdate = tasks.Find(t => t.Id == id);
+            Task taskToUpdate = tasks.Find(t => t.Id == id);//2
             if (taskToUpdate != null)
             {
                 taskToUpdate.Name = name;

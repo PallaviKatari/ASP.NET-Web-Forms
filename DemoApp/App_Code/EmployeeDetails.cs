@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using DemoApp;
 
-
 public class EmployeeDetails // Access using ObjectDataSource Control
 {
     public List<Employee> GetEmployees(int startIndex, int maxRows)

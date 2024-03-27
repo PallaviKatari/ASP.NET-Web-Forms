@@ -19,8 +19,8 @@
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function (response) {
-                        var tasks = response.d;
-                        $("#taskList").empty();
+                        var tasks = response.d;//1,2,3 - id,name
+                        $("#taskList").empty();//ul
                         $.each(tasks, function (index, task) {
                             $("#taskList").append("<li>" + task.Name + " <button onclick='EditTask(" + task.Id + ")'>Edit</button> <button onclick='DeleteTask(" + task.Id + ")'>Delete</button></li>");
                         });

@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" EnableViewState="true" ViewStateEncryptionMode="Always" AutoEventWireup="true" CodeBehind="Panels.aspx.cs" Inherits="DemoApp.Panels" %>
 
+<%@ Register Src="~/Sample.ascx" TagPrefix="uc1" TagName="Sample" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,6 +11,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <uc1:Sample runat="server" ID="Sample" />
         <div>
             The Panel control works as a container for other controls on the page.
          It controls the appearance and visibility of the controls it contains. 

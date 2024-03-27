@@ -156,6 +156,7 @@
     <Content Include="DemoWithoutMaster.aspx" />
     <Content Include="EntityFrameworkDemo.aspx" />
     <Content Include="ErrorHandlingDemo.aspx" />
+    <Content Include="ErrorHandlingDemo1.aspx" />
     <Content Include="ErrorPage.html" />
     <Content Include="favicon.ico" />
     <Content Include="Files\adrotator.xml" />
@@ -172,6 +173,7 @@
     <Content Include="IsPostback.aspx" />
     <Content Include="jQueryValidation.aspx" />
     <Content Include="LocalDB.aspx" />
+    <Content Include="LoggingErrors.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="LoginDBSession.aspx" />
     <Content Include="Multilingual.aspx" />
@@ -229,6 +231,7 @@
       <LastGenOutput>WebForms.cs</LastGenOutput>
     </Content>
     <Content Include="WebServerControlDemo.aspx" />
+    <Content Include="WebUserControl1.ascx" />
     <Content Include="Wizard.aspx" />
     <Content Include="XMLDataAccess.aspx" />
     <Content Include="App_Themes\CommonUI\Textbox.skin" />
@@ -518,6 +521,13 @@
     <Compile Include="ErrorHandlingDemo.aspx.designer.cs">
       <DependentUpon>ErrorHandlingDemo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ErrorHandlingDemo1.aspx.cs">
+      <DependentUpon>ErrorHandlingDemo1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorHandlingDemo1.aspx.designer.cs">
+      <DependentUpon>ErrorHandlingDemo1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -541,6 +551,13 @@
     </Compile>
     <Compile Include="LocalDB.aspx.designer.cs">
       <DependentUpon>LocalDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoggingErrors.aspx.cs">
+      <DependentUpon>LoggingErrors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoggingErrors.aspx.designer.cs">
+      <DependentUpon>LoggingErrors.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -718,6 +735,13 @@
     </Compile>
     <Compile Include="WebServerControlDemo.aspx.designer.cs">
       <DependentUpon>WebServerControlDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
     </Compile>
     <Compile Include="Wizard.aspx.cs">
       <DependentUpon>Wizard.aspx</DependentUpon>
