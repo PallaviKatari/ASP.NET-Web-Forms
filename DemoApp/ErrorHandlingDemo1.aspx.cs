@@ -50,7 +50,7 @@ namespace DemoApp
         protected void Button1_Click(object sender, EventArgs e)
         {
             string ConString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-            string selectSQL = "SELECT * FROM PRODUCT";
+            string selectSQL = "SELECT * FROM PRODUCTS";
             SqlConnection con = new SqlConnection(ConString);
             SqlCommand cmd = new SqlCommand(selectSQL, con);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);

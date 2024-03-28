@@ -55,7 +55,6 @@ namespace DemoApp
             Exception exc = Server.GetLastError();
             String str = "";
             str = exc.Message;
-
             String path = @"E:\AllErrors.txt";
             File.AppendAllText(path, str);
 
