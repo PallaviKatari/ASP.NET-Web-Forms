@@ -175,6 +175,7 @@
     <Content Include="LocalDB.aspx" />
     <Content Include="LoggingErrors.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="LoginAuthenticate.aspx" />
     <Content Include="LoginDBSession.aspx" />
     <Content Include="Multilingual.aspx" />
     <Content Include="MultiView.aspx" />
@@ -182,6 +183,7 @@
     <Content Include="ObjectCache.aspx" />
     <Content Include="PageLifeCycle.aspx" />
     <Content Include="PageNotFound.html" />
+    <Content Include="PalindromeServerControl.aspx" />
     <Content Include="Panels.aspx" />
     <Content Include="Postback.aspx" />
     <Content Include="Products.aspx" />
@@ -566,6 +568,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LoginAuthenticate.aspx.cs">
+      <DependentUpon>LoginAuthenticate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginAuthenticate.aspx.designer.cs">
+      <DependentUpon>LoginAuthenticate.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LoginDBSession.aspx.cs">
       <DependentUpon>LoginDBSession.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -607,6 +616,13 @@
     </Compile>
     <Compile Include="PageLifeCycle.aspx.designer.cs">
       <DependentUpon>PageLifeCycle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PalindromeServerControl.aspx.cs">
+      <DependentUpon>PalindromeServerControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PalindromeServerControl.aspx.designer.cs">
+      <DependentUpon>PalindromeServerControl.aspx</DependentUpon>
     </Compile>
     <Compile Include="Panels.aspx.cs">
       <DependentUpon>Panels.aspx</DependentUpon>
